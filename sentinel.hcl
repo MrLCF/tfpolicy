@@ -10,10 +10,6 @@ module "tfconfig-functions" {
     source = "../common-functions/tfconfig-functions/tfconfig-functions.sentinel"
 }
 
-module "azure-functions" {
-    source = "./azure-functions/azure-functions.sentinel"
-}
-
 policy "restrict-vm-size" {
     source = "./restrict-vm-size.sentinel"
     enforcement_level = "advisory"
